@@ -1,0 +1,12 @@
+[package]
+name = "instru_plugin"
+version = "0.1.0"
+authors = ["Dan Aloni <alonid@gmail.com>"]
+
+[lib]
+crate-type = [ "dylib" ]
+plugin = true
+plugin-recursive-until-crates = [ "instru", "other-dep" ]
+
+[lib."plugin-dependencies"]
+instru = { path = "../instru" }

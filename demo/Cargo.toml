@@ -1,0 +1,11 @@
+[package]
+name = "demo"
+version = "0.1.0"
+authors = ["Dan Aloni <alonid@gmail.com>"]
+
+[dependencies]
+smallvec = "*"
+instru_plugin = { path = "../instru_plugin" }
+
+[profile.dev]
+active-plugins = ["instru_plugin"]

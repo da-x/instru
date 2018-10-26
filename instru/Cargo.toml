@@ -1,0 +1,10 @@
+[package]
+name = "instru"
+version = "0.1.0"
+authors = ["Dan Aloni <alonid@gmail.com>"]
+
+[dependencies]
+ansi_term = "0.11"
+difference = "2.0"
+smallvec = "0.6"
+lazy_static = "1.2"
