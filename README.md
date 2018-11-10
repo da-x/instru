@@ -24,9 +24,9 @@ implements the code that is called by the code that the plugin adds to the AST.
 
 The content of this branch over Rust nightly contain the following changes:
 
-* Implementation of the `function` macro, which returns a `\`static str` which
+* Implementation of the `function!` macro, which returns a static `&str` which
 tells the name of the current module's function. There's currently an [open
-RFC on the subject.](https://github.com/rust-lang/rfcs/issues/1743).
+RFC on the subject](https://github.com/rust-lang/rfcs/issues/1743).
 
 * The addition of a whole-crate AST transformation plugin API. The
 `WholeCrateTransformers` API allows a `ast::Crate -> ast::Crate` function to
